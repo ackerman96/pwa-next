@@ -6,15 +6,14 @@ import { Provider, useDispatch } from "react-redux";
 import 'antd/dist/antd.css'
 
 function MyApp({ Component, pageProps }) {
-  // console.log('store', store);
   return (
     <div>
       <Provider store={store} >
-        <Component   {...pageProps}  />
+        <Component {...pageProps}  />
       </Provider>
     </div>
   )
 
 }
-// export default wrapper.withRedux(MyApp);
-export default MyApp;
+export default wrapper.withRedux(MyApp);
+// export default MyApp;

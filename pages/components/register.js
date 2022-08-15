@@ -35,7 +35,6 @@ const formConfig = {
     // agreement: values.agreement ? undefined : 'Should accept agreement',
     // passwordMatch: values.password === values.confirmPassword ? undefined : 'Passwords do not match',
     // username: values.username ? undefined : 'Username is required',
-
   })},
 };
 
@@ -104,7 +103,6 @@ const fields = [
   },
 ];
 
-
 const Register = (props) => {
   const dispatch = useDispatch()
   const [form] = Form.useForm();
@@ -113,7 +111,6 @@ const Register = (props) => {
     console.log('Received values of form: ', values);
     props.handleSubmit();
   };
-
 
   return (
     <Form
@@ -149,6 +146,9 @@ const Register = (props) => {
       label="Password"
       placeholder="Password"
       type={'password'}
+      // rules={[
+
+      // ]})
       />
       <Field
       component={TextField}
