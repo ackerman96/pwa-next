@@ -3,6 +3,7 @@ import { Button, Checkbox, Form, Input } from 'antd';
 import React from 'react';
 import { connect , useDispatch} from 'react-redux';
 import {login} from '../function/mainThunks';
+import Link from 'next/link'
 import {
   SelectField,
   TextField,
@@ -104,7 +105,7 @@ const App = (props) => {
         <Button type="primary" htmlType="submit"  className="login-form-button">
           Log in
         </Button>
-        Or <a href="/components/register">register now!</a>
+        Or <Link href="/components/register"><a>register now!</a></Link>
       </Form.Item>
     </Form>
   );
